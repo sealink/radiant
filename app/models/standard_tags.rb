@@ -814,7 +814,7 @@ module StandardTags
     attributes = options.inject('') { |s, (k, v)| s << %{#{k.downcase}="#{v}" } }.strip
     attributes = " #{attributes}" unless attributes.empty?
     text = tag.double? ? tag.expand : tag.render('title')
-    %{<a href="#{tag.render('path')}#{anchor}"#{attributes}>#{text}</a>}
+    %{<a href="#{tag.render('path')}#{anchor}"#{attributes}>#{text}</a>}.html_safe
   end
 
   desc %{
@@ -843,7 +843,7 @@ module StandardTags
       end
     end
     separator = tag.attr['separator'] || ' &gt; '
-    breadcrumbs.join(separator)
+    breadcrumbs.join(separator).html_safe
   end
 
   desc %{
@@ -1170,7 +1170,7 @@ module StandardTags
         tag.locals.paginated_list = displayed_children
         result << tag.render('pagination', tag.attr.dup)
       end
-      result.flatten.join('')
+      result.flatten.join('').html_safe
     end
     
     def children_find_options(tag)
