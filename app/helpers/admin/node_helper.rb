@@ -83,8 +83,8 @@ module Admin::NodeHelper
     if display_name == 'Page'
       ""
     else
-      %{<span class="info">(#{ h(display_name) })</span>}.html_safe
-    end
+      %{<span class="info">(#{ h(display_name) })</span>}
+    end.html_safe
   end
 
   def spinner
