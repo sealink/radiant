@@ -10,6 +10,7 @@
             = expander(level) + link_to(raw("#{icon} #{node_title}"), edit_admin_page_url(page), :title => page.path)
             = page_type
             = spinner
+            %a.add-view-page{:href => page.path, :target => '_blank'} View page &gt;
     - node.status_column do
       - unless simple
         %td.status
