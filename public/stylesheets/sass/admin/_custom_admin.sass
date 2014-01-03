@@ -1,0 +1,217 @@
+//  Bootstrap v3.0.21
+@import "bootstrap/sass-bootstrap.scss"
+
+body.reversed
+  color: #333333
+  background-color: white
+  #content
+    form
+      p label
+        text-shadow: none
+        color: #333
+      .title .textbox
+        margin-bottom: 2px
+      .buttons
+        padding: 17px 20px 18px
+        background-color: #f5f5f5
+        border-top: 1px solid #e5e5e5
+        box-shadow: none
+        border-radius: 0
+        -webkit-border-radius: 0
+        background-image: none
+        .button
+          font-size: 14px
+          margin-right: 20px
+      .popup
+        color: inherit
+      p.updated_line
+        color: #333
+        font-size: 90%
+
+      fieldset
+        box-shadow: none
+        border-radius: 0
+        border-bottom: 1px solid #ccc
+        background: none
+        h3
+          padding: 0
+          margin: inherit
+
+
+#content
+  font-size: auto
+  line-height: auto
+  font-size: 100%
+
+#main
+  float: none
+  width: auto
+
+#site_links
+  color: #ccc
+
+#toolbar
+  background: #eee
+
+ul#secondary_navigation li a.current
+
+h1, body.reversed h1
+  font-weight: bold
+  font-size: 185%
+  text-shadow: 0 0 20px rgba(255,255,255,0.1)
+  background-color: #eee
+  padding: 15px 15px 15px 20px
+  margin: -20px -20px 20px
+  border-bottom: none
+
+ul#navigation
+  list-style: none
+  margin: 20px 20px 0
+  li a
+    color: #FFF
+
+ul#secondary_navigation
+  float: none
+  margin: 0
+  li
+    float: none
+    display: inline-block
+    a
+      background-image: none
+      color: #999
+      &.current
+        background-image: none
+        background: white
+      &:hover, &.current:hover
+        background-image: none
+        background: #007eb1
+        color: #fff
+
+.box
+  box-shadow: none !important
+  background: none
+  &:before
+    background-image: none
+
+#header
+  font-size: 100%
+  background-image: none
+  background: #02397c
+
+// Pages table
+table.index, #pages
+  th
+    font-size: 100%
+    background-color: none
+    color: black
+  td
+    line-height: 31px
+
+    &.name img
+      margin-left: 5px
+
+    &.name a
+      float: left
+
+    &.name .info
+      float: left
+      margin-left: 10px
+      font-size: 75%
+      display: block
+      margin-top: 2px
+
+    &.name .w1
+      display: block
+
+    &.actions
+      .action img, .action.disabled img
+        vertical-align: middle
+
+    &.actions, &.status
+      font-size: 100%
+
+  tr.hover td, tr:hover td
+    background-image: none
+    border-top: 1px solid #f0f0f0
+    border-bottom: 1px solid #f0f0f0
+
+  .draft_status, .hidden_status
+    line-height: 20px
+    margin: 6px 0
+
+.menu
+  margin: 0
+  list-style: none
+
+// catorgy select on assets page
+#category_id
+  margin: 0
+
+.drawer
+  margin-bottom: 2em
+
+.drawer_handle
+  a, a:hover, a:active, a:focus
+    color: #eee
+    font-size: 100%
+    top: 1px
+
+.drawer_contents table.fieldset
+  .label
+    display: table-cell
+  td.field input.textbox
+    margin-left: 4px
+
+
+#tab_control
+  .tabs
+    float: left
+    width: 100%
+    margin-right: -4px
+    .tab
+      color: #666
+      background-color: #eee
+      font-size: 100%
+      text-align: left
+      margin-right: 5px
+      padding: 10px 15px 8px
+      text-decoration: none
+      display: inline-block
+      float: left
+      position: relative
+      margin-bottom: -1px
+      border-bottom: 1px solid #eee
+    .tab.here, .tab.here:hover
+      background-color: #FFF
+      border: 1px solid #ccc
+      border-bottom-color: transparent
+    .tab:hover
+      background: #ccc
+      border-bottom: 1px solid #ccc
+    .tab .close
+      margin: 0 0 0 7px
+
+  .pages
+    background: #fff
+    width: 100%
+    clear: both
+    .reference_links
+      font-size: 1em
+    .page
+      padding: 12px 20px 0
+      background-color: #FFF
+      border-top: 1px solid #ccc
+      background-image: none
+      box-shadow: none
+
+// same as bootstrap btn-default
+.actions
+  background-image: none
+  background: #eee
+  border-top: 1px solid #ccc
+  padding: 20px
+  box-shadow: 0 -1px 10px rgba(0,0,0,0.2)
+  position: fixed
+  bottom: 0
+  right: 0
+  left: 0
